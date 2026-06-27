@@ -7,39 +7,74 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Industrial Energy Intelligence</div>
-        <div class="nav-links">
-            <a onclick="downloadReport()">Download Report</a>
-            <a onclick="logout()">Logout</a>
-        </div>
-    </nav>
 
-    <div class="prediction-container">
-        <h1>AI Prediction Results</h1>
-        
-        <div id="results" class="results"></div>
+<nav class="navbar">
+    <div class="logo">Industrial Energy Intelligence</div>
+    <div class="nav-links">
+        <a onclick="downloadReport()">Download Report</a>
+        <a onclick="goBack()">Back</a>
+    </div>
+</nav>
 
-        <h2>Graphical Analysis</h2>
-        <div class="charts">
-            <canvas id="energyChart" height="200"></canvas>
-        </div>
+<div class="prediction-container">
 
-        <div class="chat-section">
-            <h2>AI Chatbot Assistant</h2>
-            <div id="chat-window" class="chat-window"></div>
-            <div class="chat-input">
-                <input type="text" id="chat-msg" placeholder="Ask for optimization tips or explanations...">
-                <button onclick="sendChat()" class="btn-primary">Send</button>
-            </div>
+    <h1>AI Prediction Results</h1>
+
+    <div id="results" class="results">
+
+        <h2>📊 Prediction Summary</h2>
+
+        <p id="energy"></p>
+        <p id="carbon"></p>
+
+        <hr>
+
+        <h3>Cost Estimation</h3>
+        <p id="cost"></p>
+
+        <h3>Efficiency Score</h3>
+        <p id="efficiency"></p>
+
+        <h3>Carbon Impact Level</h3>
+        <p id="carbonLevel"></p>
+
+        <h3>Energy Saving Potential</h3>
+        <p id="savings"></p>
+
+        <h3>Sustainability Score</h3>
+        <p id="sustainability"></p>
+
+        <h3>AI Recommendations</h3>
+        <ul id="recommendations"></ul>
+
+    </div>
+
+    <h2>Graphical Analysis</h2>
+    <div class="charts">
+        <div class="chart-box">
+              <canvas id="energyChart"></canvas>
         </div>
     </div>
 
-    <footer>
-        <p>© 2026 Industrial Energy Intelligence | Authorized Access Only | For Registered Industrial Partners</p>
-    </footer>
+    <div class="chat-section">
+        <h2>AI Chatbot Assistant</h2>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="/static/main.js"></script>
+        <div id="chat-window" class="chat-window"></div>
+
+        <div class="chat-input">
+            <input type="text" id="chat-msg" placeholder="Ask AI...">
+            <button onclick="sendChat()" class="btn-primary">Send</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Industrial Energy Intelligence</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/main.js"></script>
+
 </body>
 </html>
