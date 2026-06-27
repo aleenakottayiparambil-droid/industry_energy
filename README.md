@@ -36,3 +36,10 @@ This project solves that problem using AI and predictive modeling.
 ---
 
 ## 📁 Project Structure
+industry_energy/
+│── app.py
+│── requirements.txt
+│── .env (not uploaded)
+│── static/
+│── templates/
+│── README.md
