@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Predictions - Industrial Energy Intelligence</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Industrial Energy Intelligence</div>
+        <div class="nav-links">
+            <a onclick="downloadReport()">Download Report</a>
+            <a onclick="logout()">Logout</a>
+        </div>
+    </nav>
+
+    <div class="prediction-container">
+        <h1>AI Prediction Results</h1>
+        
+        <div id="results" class="results"></div>
+
+        <h2>Graphical Analysis</h2>
+        <div class="charts">
+            <canvas id="energyChart" height="200"></canvas>
+        </div>
+
+        <div class="chat-section">
+            <h2>AI Chatbot Assistant</h2>
+            <div id="chat-window" class="chat-window"></div>
+            <div class="chat-input">
+                <input type="text" id="chat-msg" placeholder="Ask for optimization tips or explanations...">
+                <button onclick="sendChat()" class="btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Industrial Energy Intelligence | Authorized Access Only | For Registered Industrial Partners</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/main.js"></script>
+</body>
+</html>

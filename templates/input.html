@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Batch Parameters - Industrial Energy Intelligence</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Industrial Energy Intelligence</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+        </div>
+    </nav>
+
+    <div class="input-container">
+        <h2>Enter Batch Parameters</h2>
+        <form id="batch-form">
+            <div class="form-group">
+                <label>Temperature (°C)</label>
+                <input type="number" id="temp" value="" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label>Pressure (bar)</label>
+                <input type="number" id="pressure" value="" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label>Machine Load (%)</label>
+                <input type="number" id="load" value="" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label>Runtime (hours)</label>
+                <input type="number" id="runtime" value="" step="0.1" required>
+            </div>
+            <button type="submit" class="btn-primary">Check AI Predictions</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2026 Industrial Energy Intelligence | Authorized Access Only | For Registered Industrial Partners</p>
+    </footer>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>
